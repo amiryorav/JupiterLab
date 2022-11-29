@@ -1,0 +1,71 @@
+digraph{
+
+# Graph style
+"ordering"="out"
+"rankdir"="TD"
+
+#########
+# Nodes #
+#########
+
+"Mul(Pow(Idx(Symbol('n', integer=True)), Integer(-1)), Sum(Pow(Add(Mul(Integer(-1), y(Indexed(IndexedBase(Symbol('x')), Idx(Symbol('i', integer=True))))), Indexed(IndexedBase(Symbol('t')), Idx(Symbol('i', integer=True)))), Integer(2)), Tuple(Idx(Symbol('i', integer=True)), Integer(1), Idx(Symbol('n', integer=True)))))_()" ["color"="black", "label"="Mul", "shape"="ellipse"];
+"Pow(Idx(Symbol('n', integer=True)), Integer(-1))_(0,)" ["color"="black", "label"="Pow", "shape"="ellipse"];
+"Idx(Symbol('n', integer=True))_(0, 0)" ["color"="black", "label"="n", "shape"="ellipse"];
+"Symbol('n', integer=True)_(0, 0, 0)" ["color"="black", "label"="n", "shape"="ellipse"];
+"Integer(-1)_(0, 1)" ["color"="black", "label"="-1", "shape"="ellipse"];
+"Sum(Pow(Add(Mul(Integer(-1), y(Indexed(IndexedBase(Symbol('x')), Idx(Symbol('i', integer=True))))), Indexed(IndexedBase(Symbol('t')), Idx(Symbol('i', integer=True)))), Integer(2)), Tuple(Idx(Symbol('i', integer=True)), Integer(1), Idx(Symbol('n', integer=True))))_(1,)" ["color"="black", "label"="Sum", "shape"="ellipse"];
+"Pow(Add(Mul(Integer(-1), y(Indexed(IndexedBase(Symbol('x')), Idx(Symbol('i', integer=True))))), Indexed(IndexedBase(Symbol('t')), Idx(Symbol('i', integer=True)))), Integer(2))_(1, 0)" ["color"="black", "label"="Pow", "shape"="ellipse"];
+"Add(Mul(Integer(-1), y(Indexed(IndexedBase(Symbol('x')), Idx(Symbol('i', integer=True))))), Indexed(IndexedBase(Symbol('t')), Idx(Symbol('i', integer=True))))_(1, 0, 0)" ["color"="black", "label"="Add", "shape"="ellipse"];
+"Mul(Integer(-1), y(Indexed(IndexedBase(Symbol('x')), Idx(Symbol('i', integer=True)))))_(1, 0, 0, 0)" ["color"="black", "label"="Mul", "shape"="ellipse"];
+"Integer(-1)_(1, 0, 0, 0, 0)" ["color"="black", "label"="-1", "shape"="ellipse"];
+"y(Indexed(IndexedBase(Symbol('x')), Idx(Symbol('i', integer=True))))_(1, 0, 0, 0, 1)" ["color"="black", "label"="y", "shape"="ellipse"];
+"Indexed(IndexedBase(Symbol('x')), Idx(Symbol('i', integer=True)))_(1, 0, 0, 0, 1, 0)" ["color"="black", "label"="x[i]", "shape"="ellipse"];
+"IndexedBase(Symbol('x'))_(1, 0, 0, 0, 1, 0, 0)" ["color"="black", "label"="x", "shape"="ellipse"];
+"Symbol('x')_(1, 0, 0, 0, 1, 0, 0, 0)" ["color"="black", "label"="x", "shape"="ellipse"];
+"Idx(Symbol('i', integer=True))_(1, 0, 0, 0, 1, 0, 1)" ["color"="black", "label"="i", "shape"="ellipse"];
+"Symbol('i', integer=True)_(1, 0, 0, 0, 1, 0, 1, 0)" ["color"="black", "label"="i", "shape"="ellipse"];
+"Indexed(IndexedBase(Symbol('t')), Idx(Symbol('i', integer=True)))_(1, 0, 0, 1)" ["color"="black", "label"="t[i]", "shape"="ellipse"];
+"IndexedBase(Symbol('t'))_(1, 0, 0, 1, 0)" ["color"="black", "label"="t", "shape"="ellipse"];
+"Symbol('t')_(1, 0, 0, 1, 0, 0)" ["color"="black", "label"="t", "shape"="ellipse"];
+"Idx(Symbol('i', integer=True))_(1, 0, 0, 1, 1)" ["color"="black", "label"="i", "shape"="ellipse"];
+"Symbol('i', integer=True)_(1, 0, 0, 1, 1, 0)" ["color"="black", "label"="i", "shape"="ellipse"];
+"Integer(2)_(1, 0, 1)" ["color"="black", "label"="2", "shape"="ellipse"];
+"Tuple(Idx(Symbol('i', integer=True)), Integer(1), Idx(Symbol('n', integer=True)))_(1, 1)" ["color"="blue", "label"="Tuple", "shape"="ellipse"];
+"Idx(Symbol('i', integer=True))_(1, 1, 0)" ["color"="black", "label"="i", "shape"="ellipse"];
+"Symbol('i', integer=True)_(1, 1, 0, 0)" ["color"="black", "label"="i", "shape"="ellipse"];
+"Integer(1)_(1, 1, 1)" ["color"="black", "label"="1", "shape"="ellipse"];
+"Idx(Symbol('n', integer=True))_(1, 1, 2)" ["color"="black", "label"="n", "shape"="ellipse"];
+"Symbol('n', integer=True)_(1, 1, 2, 0)" ["color"="black", "label"="n", "shape"="ellipse"];
+
+#########
+# Edges #
+#########
+
+"Mul(Pow(Idx(Symbol('n', integer=True)), Integer(-1)), Sum(Pow(Add(Mul(Integer(-1), y(Indexed(IndexedBase(Symbol('x')), Idx(Symbol('i', integer=True))))), Indexed(IndexedBase(Symbol('t')), Idx(Symbol('i', integer=True)))), Integer(2)), Tuple(Idx(Symbol('i', integer=True)), Integer(1), Idx(Symbol('n', integer=True)))))_()" -> "Pow(Idx(Symbol('n', integer=True)), Integer(-1))_(0,)";
+"Mul(Pow(Idx(Symbol('n', integer=True)), Integer(-1)), Sum(Pow(Add(Mul(Integer(-1), y(Indexed(IndexedBase(Symbol('x')), Idx(Symbol('i', integer=True))))), Indexed(IndexedBase(Symbol('t')), Idx(Symbol('i', integer=True)))), Integer(2)), Tuple(Idx(Symbol('i', integer=True)), Integer(1), Idx(Symbol('n', integer=True)))))_()" -> "Sum(Pow(Add(Mul(Integer(-1), y(Indexed(IndexedBase(Symbol('x')), Idx(Symbol('i', integer=True))))), Indexed(IndexedBase(Symbol('t')), Idx(Symbol('i', integer=True)))), Integer(2)), Tuple(Idx(Symbol('i', integer=True)), Integer(1), Idx(Symbol('n', integer=True))))_(1,)";
+"Pow(Idx(Symbol('n', integer=True)), Integer(-1))_(0,)" -> "Idx(Symbol('n', integer=True))_(0, 0)";
+"Pow(Idx(Symbol('n', integer=True)), Integer(-1))_(0,)" -> "Integer(-1)_(0, 1)";
+"Idx(Symbol('n', integer=True))_(0, 0)" -> "Symbol('n', integer=True)_(0, 0, 0)";
+"Sum(Pow(Add(Mul(Integer(-1), y(Indexed(IndexedBase(Symbol('x')), Idx(Symbol('i', integer=True))))), Indexed(IndexedBase(Symbol('t')), Idx(Symbol('i', integer=True)))), Integer(2)), Tuple(Idx(Symbol('i', integer=True)), Integer(1), Idx(Symbol('n', integer=True))))_(1,)" -> "Pow(Add(Mul(Integer(-1), y(Indexed(IndexedBase(Symbol('x')), Idx(Symbol('i', integer=True))))), Indexed(IndexedBase(Symbol('t')), Idx(Symbol('i', integer=True)))), Integer(2))_(1, 0)";
+"Sum(Pow(Add(Mul(Integer(-1), y(Indexed(IndexedBase(Symbol('x')), Idx(Symbol('i', integer=True))))), Indexed(IndexedBase(Symbol('t')), Idx(Symbol('i', integer=True)))), Integer(2)), Tuple(Idx(Symbol('i', integer=True)), Integer(1), Idx(Symbol('n', integer=True))))_(1,)" -> "Tuple(Idx(Symbol('i', integer=True)), Integer(1), Idx(Symbol('n', integer=True)))_(1, 1)";
+"Pow(Add(Mul(Integer(-1), y(Indexed(IndexedBase(Symbol('x')), Idx(Symbol('i', integer=True))))), Indexed(IndexedBase(Symbol('t')), Idx(Symbol('i', integer=True)))), Integer(2))_(1, 0)" -> "Add(Mul(Integer(-1), y(Indexed(IndexedBase(Symbol('x')), Idx(Symbol('i', integer=True))))), Indexed(IndexedBase(Symbol('t')), Idx(Symbol('i', integer=True))))_(1, 0, 0)";
+"Pow(Add(Mul(Integer(-1), y(Indexed(IndexedBase(Symbol('x')), Idx(Symbol('i', integer=True))))), Indexed(IndexedBase(Symbol('t')), Idx(Symbol('i', integer=True)))), Integer(2))_(1, 0)" -> "Integer(2)_(1, 0, 1)";
+"Add(Mul(Integer(-1), y(Indexed(IndexedBase(Symbol('x')), Idx(Symbol('i', integer=True))))), Indexed(IndexedBase(Symbol('t')), Idx(Symbol('i', integer=True))))_(1, 0, 0)" -> "Mul(Integer(-1), y(Indexed(IndexedBase(Symbol('x')), Idx(Symbol('i', integer=True)))))_(1, 0, 0, 0)";
+"Add(Mul(Integer(-1), y(Indexed(IndexedBase(Symbol('x')), Idx(Symbol('i', integer=True))))), Indexed(IndexedBase(Symbol('t')), Idx(Symbol('i', integer=True))))_(1, 0, 0)" -> "Indexed(IndexedBase(Symbol('t')), Idx(Symbol('i', integer=True)))_(1, 0, 0, 1)";
+"Mul(Integer(-1), y(Indexed(IndexedBase(Symbol('x')), Idx(Symbol('i', integer=True)))))_(1, 0, 0, 0)" -> "Integer(-1)_(1, 0, 0, 0, 0)";
+"Mul(Integer(-1), y(Indexed(IndexedBase(Symbol('x')), Idx(Symbol('i', integer=True)))))_(1, 0, 0, 0)" -> "y(Indexed(IndexedBase(Symbol('x')), Idx(Symbol('i', integer=True))))_(1, 0, 0, 0, 1)";
+"y(Indexed(IndexedBase(Symbol('x')), Idx(Symbol('i', integer=True))))_(1, 0, 0, 0, 1)" -> "Indexed(IndexedBase(Symbol('x')), Idx(Symbol('i', integer=True)))_(1, 0, 0, 0, 1, 0)";
+"Indexed(IndexedBase(Symbol('x')), Idx(Symbol('i', integer=True)))_(1, 0, 0, 0, 1, 0)" -> "IndexedBase(Symbol('x'))_(1, 0, 0, 0, 1, 0, 0)";
+"Indexed(IndexedBase(Symbol('x')), Idx(Symbol('i', integer=True)))_(1, 0, 0, 0, 1, 0)" -> "Idx(Symbol('i', integer=True))_(1, 0, 0, 0, 1, 0, 1)";
+"IndexedBase(Symbol('x'))_(1, 0, 0, 0, 1, 0, 0)" -> "Symbol('x')_(1, 0, 0, 0, 1, 0, 0, 0)";
+"Idx(Symbol('i', integer=True))_(1, 0, 0, 0, 1, 0, 1)" -> "Symbol('i', integer=True)_(1, 0, 0, 0, 1, 0, 1, 0)";
+"Indexed(IndexedBase(Symbol('t')), Idx(Symbol('i', integer=True)))_(1, 0, 0, 1)" -> "IndexedBase(Symbol('t'))_(1, 0, 0, 1, 0)";
+"Indexed(IndexedBase(Symbol('t')), Idx(Symbol('i', integer=True)))_(1, 0, 0, 1)" -> "Idx(Symbol('i', integer=True))_(1, 0, 0, 1, 1)";
+"IndexedBase(Symbol('t'))_(1, 0, 0, 1, 0)" -> "Symbol('t')_(1, 0, 0, 1, 0, 0)";
+"Idx(Symbol('i', integer=True))_(1, 0, 0, 1, 1)" -> "Symbol('i', integer=True)_(1, 0, 0, 1, 1, 0)";
+"Tuple(Idx(Symbol('i', integer=True)), Integer(1), Idx(Symbol('n', integer=True)))_(1, 1)" -> "Idx(Symbol('i', integer=True))_(1, 1, 0)";
+"Tuple(Idx(Symbol('i', integer=True)), Integer(1), Idx(Symbol('n', integer=True)))_(1, 1)" -> "Integer(1)_(1, 1, 1)";
+"Tuple(Idx(Symbol('i', integer=True)), Integer(1), Idx(Symbol('n', integer=True)))_(1, 1)" -> "Idx(Symbol('n', integer=True))_(1, 1, 2)";
+"Idx(Symbol('i', integer=True))_(1, 1, 0)" -> "Symbol('i', integer=True)_(1, 1, 0, 0)";
+"Idx(Symbol('n', integer=True))_(1, 1, 2)" -> "Symbol('n', integer=True)_(1, 1, 2, 0)";
+}
