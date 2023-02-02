@@ -1,0 +1,2 @@
+https://github.com/selva86/datasets
+https://github.com/stedy/Machine-Learning-with-R-datasets
